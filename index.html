@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DRIVEFORM | Akcesoria samochodowe premium</title>
+  <meta name="description" content="DRIVEFORM — premium akcesoria samochodowe. Detailing, wnętrze, oświetlenie i dodatki dla kierowców.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="topbar">
+    Darmowa dostawa od 199 zł · Wysyłka w 24h · Bezpieczne płatności
+  </div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#start" class="logo">
+        DRIVE<span>FORM</span>
+      </a>
+
+      <nav id="menu">
+        <a href="#sklep">Sklep</a>
+        <a href="#dlaczego-my">Dlaczego my</a>
+        <a href="#opinie">Opinie</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="searchButton" aria-label="Wyszukaj">⌕</button>
+
+        <button class="cart-button" id="cartButton">
+          Koszyk <span id="cartCount">0</span>
+        </button>
+
+        <button class="menu-button" id="menuButton" aria-label="Otwórz menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-bar" id="searchBar">
+    <div class="container search-wrap">
+      <input id="searchInput" type="search" placeholder="Szukaj produktu, np. zestaw detailingowy...">
+      <button id="closeSearch">×</button>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="hero" id="start">
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=90"
+          alt="Sportowy samochód"
+        >
+      </div>
+
+      <div class="container hero-content">
+        <p class="eyebrow">Akcesoria samochodowe premium</p>
+
+        <h1>
+          STWORZONE<br>
+          DLA <span>TYCH,</span><br>
+          KTÓRZY KOCHAJĄ<br>
+          <em>AUTA.</em>
+        </h1>
+
+        <p>
+          Wyselekcjonowane akcesoria, które poprawiają wygląd,
+          komfort i charakter Twojego samochodu.
+        </p>
+
+        <a href="#sklep" class="button button-primary">
+          Zobacz produkty <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container categories-grid">
+        <a href="#sklep" class="category-card" data-filter-link="detailing">
+          <span>01</span>
+          <strong>Detailing</strong>
+          <small>Kosmetyki i pielęgnacja</small>
+          <b>→</b>
+        </a>
+
+        <a href="#sklep" class="category-card" data-filter-link="wnetrze">
+          <span>02</span>
+          <strong>Wnętrze</strong>
+          <small>Komfort i organizacja</small>
+          <b>→</b>
+        </a>
+
+        <a href="#sklep" class="category-card" data-filter-link="oswietlenie">
+          <span>03</span>
+          <strong>Oświetlenie</strong>
+          <small>Widoczność i styl</small>
+          <b>→</b>
+        </a>
+
+        <a href="#sklep" class="category-card" data-filter-link="akcesoria">
+          <span>04</span>
+          <strong>Akcesoria</strong>
+          <small>Detale, które robią różnicę</small>
+          <b>→</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="shop-section" id="sklep">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 · Sklep</p>
+            <h2>WYBIERZ COŚ<br><em>DLA SWOJEGO AUTA.</em></h2>
+          </div>
+
+          <p>
+            Produkty, które sami chcielibyśmy mieć
+            w swoim samochodzie.
+          </p>
+        </div>
+
+        <div class="shop-toolbar">
+          <div class="filters">
+            <button class="filter active" data-filter="all">Wszystkie</button>
+            <button class="filter" data-filter="detailing">Detailing</button>
+            <button class="filter" data-filter="wnetrze">Wnętrze</button>
+            <button class="filter" data-filter="oswietlenie">Oświetlenie</button>
+            <button class="filter" data-filter="akcesoria">Akcesoria</button>
+          </div>
+
+          <span id="productsCount">8 produktów</span>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <section class="feature-banner">
+      <div class="container feature-grid">
+        <div>
+          <p class="eyebrow">Driveform Select</p>
+          <h2>
+            NIE KUPUJEMY<br>
+            <em>PRZYPADKOWYCH RZECZY.</em>
+          </h2>
+
+          <p>
+            Każdy produkt przechodzi naszą selekcję pod kątem jakości,
+            trwałości i tego, czy faktycznie daje efekt w aucie.
+          </p>
+
+          <a href="#dlaczego-my" class="button button-outline">
+            Poznaj nasz standard <span>↓</span>
+          </a>
+        </div>
+
+        <div class="feature-image">
+          <img
+            src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1200&q=90"
+            alt="Czarne sportowe auto"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="dlaczego-my">
+      <div class="container">
+        <p class="eyebrow">02 · Dlaczego DRIVEFORM</p>
+
+        <div class="benefits-grid">
+          <div class="benefit">
+            <span>01</span>
+            <h3>Jakość bez kompromisów</h3>
+            <p>Stawiamy na produkty, które mają wyglądać dobrze i służyć przez lata.</p>
+          </div>
+
+          <div class="benefit">
+            <span>02</span>
+            <h3>Wysyłka w 24 godziny</h3>
+            <p>Najpopularniejsze produkty wysyłamy maksymalnie w następny dzień roboczy.</p>
+          </div>
+
+          <div class="benefit">
+            <span>03</span>
+            <h3>Pomoc przed zakupem</h3>
+            <p>Nie wiesz, czy produkt pasuje? Napisz do nas — podpowiemy.</p>
+          </div>
+
+          <div class="benefit">
+            <span>04</span>
+            <h3>14 dni na zwrot</h3>
+            <p>Kupuj spokojnie. Masz czas, aby zdecydować, czy produkt jest dla Ciebie.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="opinie">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 · Opinie klientów</p>
+            <h2>TYLKO DOBRE<br><em>WRAŻENIA.</em></h2>
+          </div>
+
+          <div class="rating-box">
+            <strong>4.9/5</strong>
+            <span>★★★★★</span>
+            <small>na podstawie 240 opinii</small>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <article>
+            <p>“Zestaw do detailingu robi robotę. Auto po myciu wygląda lepiej niż po odbiorze z komisu.”</p>
+            <strong>Michał K.</strong>
+            <span>Zweryfikowany zakup</span>
+          </article>
+
+          <article>
+            <p>“Szybka wysyłka, świetne zabezpieczenie paczki i bardzo dobra jakość uchwytu do telefonu.”</p>
+            <strong>Patryk W.</strong>
+            <span>Zweryfikowany zakup</span>
+          </article>
+
+          <article>
+            <p>“W końcu sklep, który ma produkty dla ludzi, którzy faktycznie jarają się samochodami.”</p>
+            <strong>Adrian S.</strong>
+            <span>Zweryfikowany zakup</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter-grid">
+        <div>
+          <p class="eyebrow">Driveform Club</p>
+          <h2>ODBIERZ <em>10%</em><br>NA PIERWSZY ZAKUP.</h2>
+        </div>
+
+        <form id="newsletterForm">
+          <input type="email" placeholder="Twój adres e-mail" required>
+          <button type="submit">Dołącz <span>→</span></button>
+          <p id="newsletterMessage"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="cart" id="cart">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Twoje zamówienie</p>
+        <h2>Koszyk</h2>
+      </div>
+
+      <button id="closeCart" aria-label="Zamknij koszyk">×</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Twój koszyk jest pusty.</p>
+    </div>
+
+    <div class="cart-bottom">
+      <div class="delivery-info">
+        <span>Darmowa dostawa od 199 zł</span>
+        <div><i id="deliveryProgress"></i></div>
+      </div>
+
+      <div class="total">
+        <span>Łącznie</span>
+        <strong id="cartTotal">0 zł</strong>
+      </div>
+
+      <button class="button button-primary checkout-button" id="checkoutButton">
+        Przejdź do płatności <span>→</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <footer id="kontakt">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <strong>DRIVE<span>FORM</span></strong>
+        <p>Akcesoria samochodowe<br>dla ludzi, którzy kochają auta.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>SKLEP</h4>
+        <a href="#sklep">Wszystkie produkty</a>
+        <a href="#sklep">Detailing</a>
+        <a href="#sklep">Akcesoria</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>POMOC</h4>
+        <a href="#">Dostawa i płatności</a>
+        <a href="#">Zwroty i reklamacje</a>
+        <a href="#">Regulamin</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>KONTAKT</h4>
+        <a href="mailto:kontakt@driveform.pl">kontakt@driveform.pl</a>
+        <a href="tel:+48123456789">+48 123 456 789</a>
+        <a href="#">Instagram ↗</a>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <span>© 2026 DRIVEFORM</span>
+      <span>Polityka prywatności · Cookies</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
